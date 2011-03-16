@@ -36,13 +36,13 @@
 	count +=3;
 	[UIView commitAnimations];*/
 }
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	[UIView beginAnimations:@"test" context:NULL];
-	[UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-	self.transform = CGAffineTransformMakeRotation(.8);
-	[UIView commitAnimations];
-}
+//-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//	[UIView beginAnimations:@"test" context:NULL];
+//	[UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+//	self.transform = CGAffineTransformMakeRotation(.8);
+//	[UIView commitAnimations];
+//}
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	CGPoint prev = [[touches anyObject] previousLocationInView:self];
